@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background-color: #222;
+}
+
+#controls {
+    padding: 15px;
+    background-color: #151515;
+}
+
+#cy {
+    width: 100%;
+    height: 90vh;
+    background-color: #1b1b1b;
+}
+
+#map-details {
+    box-sizing: border-box;
+    flex: 0 0 480px;
+
+    padding: 20px;
+    padding-top: 0px;
+    background-color: #292929;
+    border-radius: 10px;
+
+    overflow-y: auto;
+}
+
+.container {
+  display: flex;
+}
+
+.container div {
+  width: 100%;
+}
+
+
+/* Both team columns */
+#class-progress {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Individual team panels */
+.progress-team {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+/* Team headings */
+.progress-team h3 {
+    text-align: center;
+    padding: 8px;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.progress-team.red h3 {
+    background-color: #b53d3d;
+}
+
+.progress-team.blu h3 {
+    background-color: #3276ad;
+}
+
+/* One character and its counter */
+.progress-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 0;
+    border-bottom: 1px solid #555;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.progress-row > span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Counter controls */
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.counter button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.counter span {
+    min-width: 18px;
+    text-align: center;
+}
+
+
+#completion-container {
+    margin: 15px 0 20px;
+}
+
+#completion-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#completion-bar {
+    width: 100%;
+    height: 18px;
+    accent-color: #4caf50;
+}
+

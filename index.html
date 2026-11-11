@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="author" content="FancySnacks">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TF2 Roadtrip</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://unpkg.com/cytoscape@3.30.4/dist/cytoscape.min.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+
+    <main>
+        <section id="controls">
+            <div style="display:flex">
+                <button id="random-layout">Random Layout</button>
+                <button id="date-layout" style="margin-left:5px">Release Date Layout</button>
+                <button id="reset-view" style="margin-left:5px">Reset View</button>
+
+                <p style="margin:0 0 0 25px">Maps Completed: </p>
+                <p style="margin:0 0 0 5px" id="global-completion-text">0%</p>
+
+                <button id="reset-global" style="margin-left:25px">Reset ALL Progress</button>
+
+            </div>
+        </section>
+
+        <div class="container">
+            <div id="cy"></div>     <!-- Cytoscape renders the graph inside this -->
+
+            <div id="map-details">
+                <h2 id="selected-map-name">Select a map!</h2>
+                <img id="detail-image">
+                <div class="container">
+                    <p id="map-mode"></p>
+                    <p id="map-date" style="margin-left:25px"></p>
+                </div>
+
+                <div id="completion-container">
+                    <p id="completion-text">Completion: 0%</p>
+                    <progress id="completion-bar" value="0" max="100"></progress>
+                </div>
+
+                <p>Play a full round as each class on both teams</p>
+
+                <div id="class-progress"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p style="margin-left: 10px">Made by <a href="github.com/FancySnacks">FancySnacks</a>  @2026</p>
+            <p style="margin-left: 100px">HINT: Map order is not forced, you can complete maps in any sequence.</p>
+        </div>
+    </main>
+    </body>
+</html>
