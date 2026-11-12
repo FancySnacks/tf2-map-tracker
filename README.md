@@ -11,3 +11,6 @@ Data is saved locally on your device/browser, it will not work between different
 
 #### Do I have to complete maps in order?
 No, the order is not forced because some maps aren't available all-year or are retired. You can complete maps in any order you want.
+
+#### Mobile use not recommended
+It doesn't work correctly on smartphones, unless you enable desktop mode view which makes it more manageable.
